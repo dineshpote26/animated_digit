@@ -599,12 +599,12 @@ String getIndianNumberFormat(String numstr, {int fractionDigits = 2}) {
       }
       final strbuff = StringBuffer()
         ..writeAll(digitList)
-        ..write(widget.decimalSeparator)
         ..writeAll(fractionList);
       result = strbuff.toString();
     } else {
       result = digitList.join('');
     }
+    print(result);
     return result;
   }
 
